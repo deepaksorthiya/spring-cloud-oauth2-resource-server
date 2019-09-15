@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserInfoController {
 
-	@GetMapping("/me")
+	@GetMapping("/api/v1/userinfo")
 	public Authentication getAuthentication() {
 		return SecurityContextHolder.getContext().getAuthentication();
 	}
